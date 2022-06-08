@@ -37,17 +37,22 @@ function GetStarted(){
 
 function HomeHero(){
     return(
-        <div class="hero">
-            <nav>
-                <h2 class="logo">Cash<span>UwU</span></h2>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
+        <section id = "header">
+            <h2 class="logo">Cash<span>UwU</span></h2>
+            <div>
+                <ul id ="navbar">
+                    <li><a class="active" href="home.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="list.html">List</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <a href="login.html" class="btn">Login</a>
+
                 </ul>
-                <a href="login.html" class="btn">Login</a>
-            </nav>
-        </div>
+            </div>
+        </section>
+
+
     )
 }
 
@@ -68,9 +73,10 @@ export default function Home(){
 
         <body>
             <HomeHero />
-            <About />
             <GetStarted />
             <HomeFooter />
+            <About />
+ 
         </body>
     
     )
