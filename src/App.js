@@ -1,6 +1,6 @@
 import React from "react";
-import Login from "./login/login";
 import Home from "./home/home";
+import Login from "./login/login";
 
 
 function App() {
